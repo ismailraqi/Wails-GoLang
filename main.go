@@ -8,7 +8,9 @@ import (
 func basic() string {
 	return "World!"
 }
-
+func basic1() string {
+	return "basic1!"
+}
 func main() {
 
 	js := mewn.String("./frontend/dist/my-app/main.js")
@@ -22,6 +24,6 @@ func main() {
 		CSS:    css,
 		Colour: "#131313",
 	})
-	app.Bind(basic)
+	app.Bind(basic1)
 	app.Run()
 }
